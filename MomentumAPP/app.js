@@ -10,13 +10,13 @@ const link = document.querySelector("a");
 function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    const username = loginInput.value;
-    localStorage.setItem(USERNAME_KEY, username);
-    paintGreetings(username);
+    const usernameWrote = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, usernameWrote);
+    paintGreetings(usernameWrote);
 }
 
 function paintGreetings(username) {
-    greeting.innerText = `Hello ${username}!`;
+    greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
