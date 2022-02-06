@@ -1,3 +1,45 @@
 .hidden {
     display: none;
 }
+
+body{
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+	border: 2px solid rgb(149, 168, 202);
+	color: rgb(248, 248, 248);
+	line-height: 50px;
+}
+
+#clock{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#login-form{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+ }
+
+input {
+    background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid #fff;
+	color: rgb(255, 255, 255);
+    border-color: black;
+    width: 400px;
+}
+
+button {
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: rgb(248, 248, 248);
+	line-height: 50px;
+}
+button:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
