@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const logoutForm = document.querySelector("#logout-form");
+const toDoHide = document.querySelector("#todo-hide"); //todo.js 참조
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
@@ -25,6 +26,7 @@ function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
     logoutForm.classList.remove(HIDDEN_CLASSNAME);
+    toDoHide.classList.remove(HIDDEN_CLASSNAME);
     logoutForm.addEventListener("submit", onLogoutSubmit);
 }
 
